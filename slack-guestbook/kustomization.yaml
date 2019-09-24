@@ -1,0 +1,7 @@
+namePrefix: slack-
+
+bases:
+- ../kustomize-guestbook
+
+resources:
+- slack-hooks.yaml
