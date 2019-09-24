@@ -1,0 +1,7 @@
+namePrefix: slack-
+
+bases:
+- ../sock-shop
+
+resources:
+- slack-hooks.yaml
