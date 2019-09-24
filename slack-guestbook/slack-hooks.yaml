@@ -10,7 +10,7 @@ metadata:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: main-notif-syncing
+  name: guestbook-notif-syncing
   namespace: argo-notif
   annotations:
     argocd.argoproj.io/hook: Sync
@@ -34,7 +34,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: main-notif-succeed
+  name: guestbook-notif-succeed
   namespace: argo-notif
   annotations:
     argocd.argoproj.io/hook: PostSync
@@ -58,7 +58,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: main-notif-failed
+  name: guestbook-notif-failed
   namespace: argo-notif
   annotations:
     argocd.argoproj.io/hook: SyncFail
